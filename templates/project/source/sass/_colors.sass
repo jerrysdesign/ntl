@@ -1,0 +1,20 @@
+$bodyColor: #c6c6c6
+$color01: #8fceee,#95daff,#47a6d9
+$navTextColor: #003b75
+
+body
+  +bg($bodyColor)
+.wrpper
+  +bg(#fff)
+.top
+  +bg(nth($color01,1))
+  a
+    color: #000
+.copyright_t
+  +bg(nth($color01,2))
+.copyright_b
+  +bg(nth($color01,3))
+.nav
+  a
+    color: $navTextColor
+    background-color: (nth($color01,1))
