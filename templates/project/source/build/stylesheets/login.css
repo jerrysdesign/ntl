@@ -1,0 +1,19 @@
+body { font-family: "Helvetica Neue", "Microsoft JhengHei", 微軟正黑體, Helvetica, Arial, sans-serif; }
+
+body { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+.hide { display: none; }
+
+/* LOGIN PAGE --------------------------------------------- */
+body { margin: 0; padding: 0; border: 0; background-image: url(../images/logon_page_bg.jpg); font-size: 1.125em; }
+
+.login_wrapper { width: 798px; margin: 70px auto 0; }
+
+.login_form { width: 368px; margin: 0 auto; }
+.login_form input[type="text"] { border: solid 1px #4a4a4a; width: 255px; height: 40px; }
+.login_form .row + .row { margin-top: 12px; }
+
+.btn { margin: 0; padding: 0; border: 0; background-color: #3b8202; width: 89px; height: 40px; color: white; font-size: 1.125em; float: right; }
+.btn:hover { cursor: pointer; }
+
+.fpw { color: #0034a9; font-size: 0.875em; }
