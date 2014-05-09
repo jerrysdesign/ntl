@@ -1,0 +1,34 @@
+h3.title.icon_setting 主功能
+- if f == "bootstrap"
+  // Multi level dropdown menu in Bootstrap 2
+  .mainnav.dropdown.open
+    ul.dropdown-menu.multi-level aria-labelledby='dropdownMenu' role='menu'
+      li: a href='javascript:;' 第一層
+      li.dropdown-submenu
+        a href='javascript:;' tabindex='-1' 第一層
+        ul.dropdown-menu
+          li
+            a href='javascript:;' tabindex='-1' 第二層
+          li.dropdown-submenu
+            a href='javascript:;'  第二層
+            ul.dropdown-menu
+              -2.times do
+                li: a href='javascript:;' 第三層 
+          -2.times do
+            li: a href='javascript:;' 第二層
+  /! 選單說明
+  /! level1 = ul.dropdown-menu > li a
+  /! level2 = ul.dropdown-menu > li > ul > li a
+  /! level3 = ul.dropdown-menu > li > ul > li > ul > li a
+  /! 以此類推
+
+- else
+  // css version
+  .menu
+    ul
+      -18.times do
+        li
+          a href='javascript:;' =zh_lorem_words 5
+          ul
+            -10.times do
+              li: a href='javascript:;' =zh_lorem_words 5

@@ -1,0 +1,36 @@
+.row-fluid
+  form.search_block
+    span.span3
+      select.span12 multiple="multiple"
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+    span.span9
+      label 公告內容查詢
+      .form-inline
+        input type="text" 
+        button.btn.search_icon type="submit" 查詢
+        button.btn type="submit" 進階查詢
+  
+  .row-fluid
+    .span12
+      /! 清單標題
+      .list_title
+        ul
+          li: .list__no 項目
+          li: .list__ti 標題
+          li: .list__da 日期
+          li: .list__ve 點閱次數
+      /! 資料列表
+      .list_conts
+        ol
+          -8.times do
+            /! 單筆資料
+            li.list_cont
+              ul
+                li: .list__no 項目內容
+                li: .list__ti 標題內容
+                li: .list__da 日期內容
+                li: .list__ve 點閱次數內容

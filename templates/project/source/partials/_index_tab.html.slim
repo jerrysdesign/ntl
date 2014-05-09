@@ -1,0 +1,14 @@
+ul#Tab.nav.nav-tabs
+  li.active: a data-toggle="tab" href="#AA" 公佈欄
+  li: a data-toggle="tab" href="#BB" 法令規章
+  li: a data-toggle="tab" href="#CC" 表單下載
+  li: a data-toggle="tab" href="#DD" 行事曆
+.tab-content
+  #AA.tab-pane.active
+    =render "index/tab/tab01"
+  #BB.tab-pane
+    = zh_lorem_paragraphs 10
+  #CC.tab-pane
+    = zh_lorem_paragraphs 10
+  #DD.tab-pane
+    = zh_lorem_paragraphs 10

@@ -5,8 +5,12 @@ meta charset="utf-8"
 - else
   title= data["site-title"]
 
-= stylesheet_link_tag "all.css"
+link href="vender/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+link href="css/custom.css" rel="stylesheet"
+link href="css/mkc_common.css" rel="stylesheet"
+link href="stylesheets/all.css" rel="stylesheet"
+
 /[if IE]
-  = stylesheet_link_tag "ie"
+	link href="stylesheets/ie.min.css" rel="stylesheet"
 /[if lt IE 9]
-  = javascript_include_tag "//html5shim.googlecode.com/svn/trunk/html5.js"
+  script src="//html5shim.googlecode.com/svn/trunk/html5.js"

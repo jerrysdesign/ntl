@@ -1,0 +1,14 @@
+// B_內容頁(無顯示欄位)
+.wrpper
+  /! header
+  =render 'layout_header'
+  /! 主區塊
+  .main
+    .side_bar.left
+      .item
+        / 側欄選單
+        =render :partial => 'partials/index/menu' , :locals => {:f => 'bootstrap'}
+    .maincontent.page
+      =render 'page/B_內容頁(無顯示欄位).html.erb'
+  /! 頁尾
+  =render 'layout_footer'

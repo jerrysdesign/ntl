@@ -1,23 +1,39 @@
 .wrpper
-	.top
-		a target='_blank' href='www.ntl.edu.tw/' 國立臺灣圖書館首頁
-	.header
-		a.logo target='_blank' href='javascript:;' 國立臺灣圖書館內網系統
-		.banner
-	.main
-		.side_bar
-			ul
-				-18.times do
-					li.nav
-						a href='javascript:;' =zh_lorem_words 5
-	.utility
-	.footer
-		.copyright_t.pd1020
-			p 國立臺灣圖書館　館址：23574 新北市中和區中安街八十五號(地圖資訊)
-			p
-				| 請使用 1024x768 螢幕解析度獲得最佳網頁瀏覽環境
-				a target='_blank' href='www.ntl.edu.tw/' 隱私權宣告
-				a target='_blank' href='www.ntl.edu.tw/' 資訊安全政策
-				a target='_blank' href='www.ntl.edu.tw/' 著作權授權聲明
-		.copyright_b.pd1020
-			p Copyrights reserved by National Taiwan Library, 2014
+  /! header
+  =render 'layout_header'
+  /! 主區塊
+  .main
+    .side_bar.left
+      .item
+        / 側欄選單
+        =render :partial => 'partials/index/menu' , :locals => {:f => 'bootstrap'}
+    .maincontent
+      /! 頁籤區塊
+      =render 'partials/index_tab'
+
+    /! 右側邊欄
+    .side_bar.right
+      /! 登出/入區塊
+      .item.login
+        h3.title.icon_power 你的身分
+        .inner
+          ul
+            li 行政處 文書科
+            li 張嘉讚 科員
+            li 上次登入：101/10/15 08:00
+            li 本次登入：101/10/16 16:30
+          a.btn.fr href='javascript:;' 登出
+      /! 行事曆區塊
+      .item
+        h3.title.icon_caldndar 行事曆
+        /! 日曆
+        =render 'partials/assets_calendar.html.erb'
+    /! 相關連結
+    .utility
+      h3.title.icon_global 相關連結
+      ul.utility_inner.widget
+        -9.times do
+          li
+            a href='javascript:;' =zh_lorem_words 10
+  /! 頁尾
+  =render 'layout_footer'

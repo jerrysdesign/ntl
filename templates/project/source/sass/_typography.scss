@@ -2,13 +2,18 @@ $base-font-size: 16px;
 $base-line-height: 24px;
 $relative-font-sizing: false;
 
-%helvetica-light {
-  font-family: "HelveticaNeue-Light", "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
+$georgia: Georgia, Cambria, 'Times New Roman', Times, serif;
+$helvetica: 'Helvetica Neue', 'Microsoft JhengHei', 微軟正黑體, Helvetica, Arial, sans-serif;
+$lucida-grande: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+$monospace: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
+$verdana: Verdana, Geneva, sans-serif;
+
+%helvetica {
+  font-family: $helvetica;
 }
 
 body {
-  @extend %helvetica-light;
+  @extend %helvetica;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
