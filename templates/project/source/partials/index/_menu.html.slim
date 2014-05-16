@@ -3,8 +3,21 @@ h3.title.icon_setting 主功能
   // Multi level dropdown menu in Bootstrap 2
   .mainnav.dropdown.open
     ul.dropdown-menu.multi-level aria-labelledby='dropdownMenu' role='menu'
-      li: a href='javascript:;' 第一層
-      li.dropdown-submenu
+      li.style1: a href='javascript:;' 第一層
+      li.style1.dropdown-submenu
+        a href='javascript:;' tabindex='-1' 第一層
+        ul.dropdown-menu
+          li
+            a href='javascript:;' tabindex='-1' 第二層
+          li.dropdown-submenu
+            a href='javascript:;'  第二層
+            ul.dropdown-menu
+              -2.times do
+                li: a href='javascript:;' 第三層 
+          -2.times do
+            li: a href='javascript:;' 第二層
+      li.style2: a href='javascript:;' 第一層
+      li.style2.dropdown-submenu
         a href='javascript:;' tabindex='-1' 第一層
         ul.dropdown-menu
           li
@@ -21,6 +34,8 @@ h3.title.icon_setting 主功能
   /! level2 = ul.dropdown-menu > li > ul > li a
   /! level3 = ul.dropdown-menu > li > ul > li > ul > li a
   /! 以此類推
+  /! ul.dropdown-menu > li.style1 為樣式1
+  /! ul.dropdown-menu > li.style1 為樣式2
 
 - else
   // css version

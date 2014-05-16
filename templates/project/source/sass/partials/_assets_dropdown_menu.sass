@@ -7,13 +7,23 @@
     +reset-box-model
     +box-shadow(none)
     width: 100%
+  .dropdown-menu>li
+    &.style1
+      >a
+        background-image: url(../images/side_bar_menu_arrow.png)
+        background-position: left center
+        background-repeat: no-repeat
+    &.style2
+      >a
+        background-image: url(../images/side_bar_menu_arrow.png)
+        background-position: left center
+        background-repeat: no-repeat
+        font-weight: bold
   .dropdown-menu>li>a
-    background-image: url(../images/side_bar_menu_arrow.png)
-    background-position: left center
-    background-repeat: no-repeat
     line-height: 24px
     padding-left: 20px
     +border-radius(0)
+      
   .dropdown-menu>li>a:hover,
   .dropdown-menu>li>a:focus,
   .dropdown-submenu:hover>a,
