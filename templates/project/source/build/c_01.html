@@ -38,10 +38,38 @@
             </h3>
             <div class="mainnav dropdown open">
               <ul aria-labelledby="dropdownMenu" class="dropdown-menu multi-level" role="menu">
-                <li>
+                <li class="style1">
                   <a href="javascript:;">第一層</a>
                 </li>
-                <li class="dropdown-submenu">
+                <li class="style1 dropdown-submenu">
+                  <a href="javascript:;" tabindex="-1">第一層</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="javascript:;" tabindex="-1">第二層</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="javascript:;"> 第二層</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:;">第三層 </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">第三層 </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:;">第二層</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">第二層</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="style2">
+                  <a href="javascript:;">第一層</a>
+                </li>
+                <li class="style2 dropdown-submenu">
                   <a href="javascript:;" tabindex="-1">第一層</a>
                   <ul class="dropdown-menu">
                     <li>
@@ -68,7 +96,7 @@
                 </li>
               </ul>
             </div>
-            <!--選單說明--><!--level1 = ul.dropdown-menu > li a--><!--level2 = ul.dropdown-menu > li > ul > li a--><!--level3 = ul.dropdown-menu > li > ul > li > ul > li a--><!--以此類推-->
+            <!--選單說明--><!--level1 = ul.dropdown-menu > li a--><!--level2 = ul.dropdown-menu > li > ul > li a--><!--level3 = ul.dropdown-menu > li > ul > li > ul > li a--><!--以此類推--><!--ul.dropdown-menu > li.style1 為樣式1--><!--ul.dropdown-menu > li.style2 為樣式2-->
           </div>
         </div>
         <div class="maincontent page">

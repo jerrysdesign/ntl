@@ -1,1 +1,4 @@
-body { background: url(../images/banner.jpg) \9; }
+/* line 1, ../sass/ie.sass */
+body {
+  background: url(../images/banner.jpg) \9;
+}
