@@ -2,3 +2,6 @@ templates/project/source/.sass-cache/**/*
 templates/project/source/stylesheets/*
 .DS_Store*
 templates/project/source/fire_app_log.txt
+index.psd
+login.psd
+提案清單.png
