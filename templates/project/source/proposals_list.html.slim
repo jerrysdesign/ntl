@@ -1,0 +1,78 @@
+.wrpper
+  /! header
+  =render 'layout_header'
+  /! 主區塊
+  .main
+    .side_bar.left
+      .item
+        / 側欄選單
+        =render :partial => 'partials/index/menu' , :locals => {:f => 'bootstrap'}
+    .maincontent.page
+      .column
+        .column-item
+          .info_bg
+            ul.breadcrumb
+              li
+                a href="javacript:;" 首頁
+              li
+                a href="javacript:;" 館務改善管理系統
+            .column-inn.clear
+              .p_h
+                a.btn href="javascript:;" 我要提案
+                .note
+                  | 註:
+                  ul
+                    li 請先利用提案查詢功能，確認提案主題尚有類似之提案記錄。
+                    li 點選欄位名稱可進行排序。
+                .my-proposals.column
+                  .title 我的提案記錄
+                  ul
+                    li
+                      a href="javascript:;"
+                        | 提案次數 (
+                        span 3
+                        | )
+                    li
+                      a href="javascript:;"
+                        | 暫存提案 (
+                        span 2
+                        | )
+            table.table_bg.table.table-striped.no-border
+              tr
+                th scope="col" 提案編號
+                th scope="col" 主題
+                th scope="col" 提案日期
+                th scope="col" 點擊次數
+              tr
+                td  colspan="4"
+                  table.rest-table-style width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                    tbody
+                      tr
+                        td width="9%" 尋找：
+                        td width="91%"
+                          select tabindex="62" name="search_field"
+                            option value="all_field" 全部
+                            option value="textarea_field_0" 標題
+                            option value="select_field_1" 發布單位
+                            option value="html_field_3" 內容 
+                          | 為 
+                          input tabindex="63" name="search_word" type="text" class="input" value=""
+                          input tabindex="64" name="search_b1" type="submit" class="btn" value="查詢"
+              -10.times do
+                tr
+                  td =lorem_word
+                  td =zh_lorem_words 5
+                  td =lorem_date
+                  td 10
+
+
+
+    /! 相關連結
+    .utility
+      h3.title.icon_global 相關連結
+      ul.utility_inner.widget
+        -9.times do
+          li
+            a href='javascript:;' =zh_lorem_words 10
+  /! 頁尾
+  =render 'layout_footer'

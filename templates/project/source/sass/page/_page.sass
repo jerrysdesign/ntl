@@ -1,6 +1,61 @@
 .maincontent
-	&.page //two col
-		//margin-left: 200px
-		//+pie-clearfix
-		width: 740px
-		float: right
+  &.page //two col
+    //margin-left: 200px
+    //+pie-clearfix
+    width: 740px
+    float: right
+
+//.proposals_list
+.note
+  color: #f00
+  margin: 5px 0
+  ul , li
+    list-style-type: decimal
+  li
+    margin-left: 1.5em
+.p_h
+  position: relative
+  +pie-clearfix
+  overflow: hidden
+
+.my-proposals
+  position: absolute
+  right: 0
+  top: 0
+  padding: 5px
+  .title
+    line-height: 1.8
+    background-image: url('../images/icon_power.png')
+    padding-left: 30px
+    padding-right: 10px
+  ul
+    padding: 5px
+  a
+    color: #369
+    span
+      color: #f00
+
+table.no-border
+  border: none !important
+  th
+    background: none
+
+.table-striped.no-border tbody
+  > tr:nth-child(2n+1)
+    th
+      background: none
+      border: none
+      border-bottom: 1px solid #ddd
+      text-align: center
+.no-border .table-striped tbody > tr:nth-child(2n+1) > th
+  background: none
+
+.rest-table-style
+  th, tr, td
+    border: none !important
+    background: none !important
+
+//fix
+input + input.btn
+  margin-bottom: 10px
+  margin-left: 10px
