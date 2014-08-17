@@ -27,9 +27,12 @@
   .dropdown-menu>li>a:hover,
   .dropdown-menu>li>a:focus,
   .dropdown-submenu:hover>a,
-  .dropdown-submenu:focus>a 
+  .dropdown-submenu:focus>a,
+  .dropdown-submenu2:hover>a,
+  .dropdown-submenu2:focus>a 
     +border-radius(3px)
-  .dropdown-submenu
+  .dropdown-submenu,
+  .dropdown-submenu2
     > .dropdown-menu
       position: absolute
       top: 0
@@ -61,5 +64,8 @@
         left: -100%
         margin-left: 10px
         +border-radius(0 6px 6px 6px)
-  .dropdown-submenu .dropdown-menu
+  .dropdown-submenu2
+    > .dropdown-menu
+      bottom: 0
+  .dropdown-submenu .dropdown-menu,.dropdown-submenu2 .dropdown-menu
     padding: 5px

@@ -29,6 +29,19 @@ h3.title.icon_setting 主功能
                 li: a href='javascript:;' 第三層 
           -2.times do
             li: a href='javascript:;' 第二層
+
+      li.style2.dropdown-submenu-2
+        a href='javascript:;' tabindex='-1' 第一層
+        ul.dropdown-menu
+          li
+            a href='javascript:;' tabindex='-1' 第二層
+          li.dropdown-submenu
+            a href='javascript:;'  第二層
+            ul.dropdown-menu
+              -2.times do
+                li: a href='javascript:;' 第三層 
+          -2.times do
+            li: a href='javascript:;' 第二層
   /! 選單說明
   /! level1 = ul.dropdown-menu > li a
   /! level2 = ul.dropdown-menu > li > ul > li a
